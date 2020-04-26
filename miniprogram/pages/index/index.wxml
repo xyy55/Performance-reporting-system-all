@@ -1,0 +1,29 @@
+<!--miniprogram/pages/user/user.wxml-->
+<view class="name">
+  <picker bindchange="bindNameChange" value="{{name_index}}" range="{{name}}">
+    <view class="picker">
+      {{name[name_index]}}
+    </view>
+  </picker></view>
+<view class="performance">
+  <view wx:for='{{performance}}'  wx:for-index="key"  wx:for-item="value" wx:key='key' class="item">
+    <view class="key">{{key}}</view>
+    <view class="value">{{value}}</view>
+    <view class="img" bindtap="del" data-key="{{key}}"><image src="../../images/delete.png"></image></view>
+  </view>
+</view>
+<view class="add_performance">
+  <view class="key">
+    <picker bindchange="bindKeyChange" value="{{key_index}}" range="{{array}}">
+      <view class="picker">
+        {{array[key_index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="value"><input placeholder="数量" type="digit" bindinput="num_input"></input></view>
+  <view class="img" bindtap="add"><image src="../../images/add.png"></image></view>
+</view>
+<view class="submit">
+  <button type="primary" bindtap="submit">提交</button>
+</view>
+

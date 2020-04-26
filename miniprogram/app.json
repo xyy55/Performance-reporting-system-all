@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/playground/playground",
+    "pages/history/history"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "业绩统计",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/index.png",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "业绩填报"
+      },
+      {
+        "selectedIconPath": "images/playground.png",
+        "iconPath": "images/playground.png",
+        "pagePath": "pages/playground/playground",
+        "text": "全部业绩"
+      },
+      {
+        "selectedIconPath": "images/user.png",
+        "iconPath": "images/user.png",
+        "pagePath": "pages/user/user",
+        "text": "用户中心"
+      },
+      {
+        "selectedIconPath": "images/history.png",
+        "iconPath": "images/history.png",
+        "pagePath": "pages/history/history",
+        "text": "历史记录"
+      }
+    ]
+  }
+}

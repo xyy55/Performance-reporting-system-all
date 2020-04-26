@@ -1,0 +1,33 @@
+/* miniprogram/pages/home/home.wxss */
+image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align:middle;
+}
+.nickname {
+  margin-left: 20px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align:middle;
+  text-align: center;
+}
+.user {
+  vertical-align:middle;
+  text-align: center;
+  margin-top: 50px;
+}
+.branch_id {
+  margin: 100px auto;
+  font-size: 25px;
+  text-align: center;
+  width: 50%;
+  border-bottom: solid black 1px;
+}
+.branch_id input{
+  height: 26px;
+}
+button {
+  margin:5px 0;
+}

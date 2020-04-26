@@ -1,0 +1,33 @@
+<!--miniprogram/pages/user/user.wxml-->
+<view class="branch_name">
+  <input value="{{branch_name}}" bindinput="input_branch"></input>
+</view>
+<view class="name_container">
+  <view class="title">人员</view>
+  <view wx:for="{{name}}" class="item">
+    <view class="name">{{item}}</view>
+    <view class="img" data-key="{{item}}" bindtap="del_name"><image src="../../images/delete.png"></image></view>
+  </view>
+  <view class="new">
+    <input placeholder="新名字" bindinput="input_name"></input>
+    <view class="img" bindtap="add_name"><image src="../../images/add.png"></image></view>
+  </view>
+</view>
+<view class="array_container">
+  <view class="title">业绩名</view>
+  <view wx:for="{{array}}">
+    <view class="array">{{item}}</view>
+    <view class="img" data-key="{{item}}" bindtap="del_array"><image src="../../images/delete.png"></image></view>
+  </view>
+  <view class="new">
+    <input placeholder="新业绩名" bindinput="input_array"></input>
+    <view class="img" bindtap="add_array"><image src="../../images/add.png"></image></view>
+  </view>
+</view>
+<view class="clear">
+  <button bindtap="clear">清除缓存</button>
+  <button open-type='feedback'>意见反馈</button>
+</view>
+<view class="submit">
+  <button type="primary" bindtap="submit">提交</button>
+</view>

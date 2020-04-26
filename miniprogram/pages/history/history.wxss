@@ -1,0 +1,43 @@
+/* miniprogram/pages/history/history.wxss */
+.time{
+  font-size: 25px;
+  height: 26px;
+  text-align: center;
+  display: inline-block;
+  width: 50%
+}
+.create {
+  width: 100%;
+  position: fixed;
+  bottom: 10px
+}
+.name {
+  text-align: center;
+  font-size: 25px;
+  border-bottom-style: solid;
+  border-bottom-color: black; 
+  padding-bottom: 10px;
+}
+.key,.value,.img{
+  display: inline-block; 
+  vertical-align:middle;
+  font-size: 20px;
+  text-align: center;
+}
+.key{
+  width: 60%;
+
+}
+.value{
+  width: 20%
+}
+.img{
+  width: 20%
+}
+image{
+  width: 18px;
+  height: 18px;
+}
+.all {
+  padding-bottom: 55px
+}

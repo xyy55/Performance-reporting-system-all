@@ -1,0 +1,18 @@
+<!--miniprogram/pages/history/history.wxml-->
+<view class="history">
+  <picker mode="date" value="{{start_time}}" bindchange="input_start_time" class="time">{{start_time}}</picker>
+  <picker mode="date" value="{{end_time}}" bindchange="input_end_time" class="time">{{end_time}}</picker>
+</view>
+<view class="all">
+  <view wx:for='{{performance}}' wx:for-index="key" wx:key='key'>
+    <view class="name">{{key}}</view>
+    <view class="performance" wx:for="{{item}}" wx:for-index="key"  wx:for-item="value" wx:key='key'>
+      <view class="key">{{key}}</view>
+      <view class="value">{{value}}</view>
+      <view class="img"><image src="../../images/delete.png"></image></view>
+    </view>
+  </view>
+</view>
+<view class="create">
+  <button type="primary" bindtap="create">统计业绩</button>
+</view>

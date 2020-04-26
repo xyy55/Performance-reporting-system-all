@@ -1,0 +1,20 @@
+<!--miniprogram/pages/playground/playground.wxml-->
+<picker mode="date" value="{{time}}" bindchange="input_time" class="time">{{time}}</picker>
+<view class="all">
+  <view wx:for='{{performance}}'>
+    <view class="name">{{item.name}}</view>
+    <view class="performance" wx:for="{{item.performance}}" wx:for-index="key"  wx:for-item="value" wx:key='key'>
+      <view class="key" data-name="{{item.name}}" data-key="{{key}}" data-value="{{value}}" bindtap="create_red_top">{{key}}</view>
+      <view class="value">{{value}}</view>
+      <view class="img" data-key="{{key}}"><image src="../../images/delete.png"></image></view>
+    </view>
+  </view>
+</view>
+<view class="create"><button type="primary" bindtap="create">生成业绩</button></view>
+<view wx:if="{{!isHidden}}" class="red_top" bindtap="hidde_red_top" catchlongtap="function(){}">
+  <canvas bindlongtap="save_img" catchtap="function(){}" canvas-id='red_top' style='width:200px;height:300px;'></canvas>
+  <button class="save" type="primary" bindtap="save_img">保存</button>
+</view>
+<!-- <view hidden="{{isHidden}}" class="red_top" bindtap="hidde_red_top" catchlongpress="function(){}">
+  <canvas bindlongpress="save_img" catchtap="function(){}" canvas-id='red_top' style='width:200px;height:300px;'></canvas>
+</view> -->

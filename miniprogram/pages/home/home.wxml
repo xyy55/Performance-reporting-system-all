@@ -1,0 +1,10 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view class="user">
+  <image src="{{user_info.avatarUrl}}"></image>
+  <text class="nickname">{{user_info.nickName}}</text>
+</view>
+<view class="branch_id">
+  <input placeholder="机构号" bindinput="id_input"></input>
+</view>
+<button wx:if="{{!is_auth}}" type="primary" open-type="getUserInfo" bindgetuserinfo="get_info">获取授权</button>
+<button wx:if="{{is_auth}}" type="primary" bindtap="submit">确认</button>
