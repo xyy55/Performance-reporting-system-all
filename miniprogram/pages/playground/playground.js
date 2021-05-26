@@ -87,11 +87,11 @@ Page({
       isHidden:false
     })
     ctx.drawImage("../../images/red-top.jpg", 0, 0, 200, 300)
-    ctx.fillStyle = 'white'
+    ctx.fillStyle = '#F7F700'
     ctx.font = '15px Microsoft YaHei'
     ctx.textAlign = 'center';
-    ctx.fillText(name, 100, 180)
-    ctx.fillText(performance, 100, 200)
+    ctx.fillText(name, 100, 140)
+    ctx.fillText(performance, 100, 160)
     ctx.draw(true, function () {
       wx.canvasToTempFilePath({
         x: 0,

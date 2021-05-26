@@ -37,6 +37,7 @@ Page({
   },
   add_array:function(e){
     let array = this.data.array
+    if (array === "") array = []
     if (this.data.new_array != '' &&array.indexOf(this.data.new_array) === -1){
       array.push(this.data.new_array)
       this.setData({
